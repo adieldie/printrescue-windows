@@ -1,0 +1,13 @@
+{
+  "name": "Escritório - Impressora compartilhada",
+  "server_name": "PRINT-SERVER",
+  "server_ip": "192.168.1.50",
+  "share_name": "SharedPrinter",
+  "network_user": "PrinterUser",
+  "local_printer_name": "Office Printer",
+  "expected_driver": "Manufacturer Printer Driver",
+  "client_queue_name": "Office Printer (PRINT-SERVER)",
+  "enable_lpr_fallback": true,
+  "direct_printer_ip": "",
+  "direct_printer_port": 9100
+}

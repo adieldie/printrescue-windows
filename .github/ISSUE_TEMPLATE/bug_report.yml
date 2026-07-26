@@ -1,0 +1,47 @@
+name: Relatório de erro
+description: Informe um problema reproduzível no PrintRescue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remova nomes reais, IPs internos, usuários e credenciais antes de enviar.
+  - type: input
+    id: version
+    attributes:
+      label: Versão do PrintRescue
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Versão do Windows
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado atual
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs anonimizados
+      description: Não inclua senhas, nomes pessoais ou dados internos.
+      render: shell

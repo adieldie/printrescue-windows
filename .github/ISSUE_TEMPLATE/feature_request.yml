@@ -1,0 +1,22 @@
+name: Sugestão de recurso
+description: Proponha uma melhoria
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema que o recurso resolveria
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução proposta
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riscos e impacto no Windows
+      description: Informe se envolve registro, firewall, credenciais, drivers ou serviços.
